@@ -38,9 +38,9 @@ limit 3;
 # Нужно вывести 1 значение в колонке count
 TASK_3_QUERY = """
 select count(1) from flights
- join airports as a1 on flights.arrival_airport = a1.airport_code
- join airports as a2 on flights.departure_airport = a2.airport_code
- where a1.timezone = a2.timezone;"""
+join airports_data as a1 on flights.arrival_airport = a1.airport_code
+join airports_data as a2 on flights.departure_airport = a2.airport_code
+where a1.timezone = a2.timezone;"""
 #  count
 # --------
 #  16824
